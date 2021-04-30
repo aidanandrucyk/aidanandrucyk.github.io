@@ -1,0 +1,479 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aidan Andrucyk's Website">
+    <meta name="author" content="Aidan Andrucyk">
+    <title>Aidan Andrucyk's Website</title>
+    <link href="img/milky-way_1f30c.png" rel="icon">
+    <link href="img/milky-way_1f30c.png">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            background-image: url("img/andromeda.jpg");
+            background-size: cover;
+            color: #F0F0F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 1.4rem;
+            height: 100%;
+            overflow: hidden;
+            line-height: 200%;
+        }
+
+        ::-moz-selection {
+            color: black;
+            background: #188ed2;
+            border-radius: 1rem;
+        }
+
+        ::selection {
+            color: black;
+            background: #188ed2;
+            border-radius: 1rem;
+        }
+
+        #container-main {
+            padding: 4rem;
+            border-radius: 1rem;
+            box-shadow: 3px 5px rgba(0, 0, 0, 0.568);
+            background-color: #1b1b1b;
+            text-align: center;
+        }
+
+        #container-main:hover {
+            box-shadow: 3px 5px rgba(0, 0, 0, 0.5);
+            transition: .9s;
+        }
+
+        a,
+        a:visited {
+            padding: 5px;
+            background-color: rgb(15, 15, 15);
+            border-radius: .3rem;
+            text-decoration: none;
+            color: #F0F0F0;
+            transition: .7s;
+        }
+
+        a:hover {
+            padding: 5px;
+            background-color: rgb(38, 127, 187);
+            text-decoration: none;
+            transition: 0.3s;
+            color: #F0F0F0;
+            transition: .5s;
+        }
+
+        .lighter-background {
+            background-color: rgba(43, 43, 43, 0) !important;
+        }
+
+        .company-logo {
+            padding-left: 5px;
+            margin-top: 1rem;
+            height: 1.5rem;
+        }
+
+        *:not(a):not(img) {
+            cursor: url("img/milky-way_1f30c.png"), default, auto !important;
+        }
+
+        #pfp {
+            max-width: 30%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                font-size: 1.3rem;
+                background-color: black;
+
+            }
+
+            #container-main {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="container-main">
+        <a id="name" href="https://aidanandrucyk.github.io/">AIDAN ANDRUCYK</a>
+        <br>
+        <a target="_blank" class="lighter-background" href="https://att.com">swe intern @ <img class="company-logo"
+                src="img/att.png" alt="at&t" /></a>
+        <br>
+
+        <a target="_blank" href="pds/resume.pdf">resume</a>
+        <br>
+        <a target="_blank" href="https://github.com/aidanandrucyk">github</a>
+        <br>
+        <a target="_blank" href="https://linkedin.com/in/aidanandrucyk">linkedin</a>
+        <br>
+        <a target="_blank" href="https://www.instagram.com/aandrucyk.va/">photography</a>
+        <br>
+        <a target="_blank" href="https://aidanandrucyk.github.io/aidanandrucyk.bootstrap/#contact">contact</a>
+        <br>
+    </div>
+    
+</body>
+
+<script type="text/javascript">
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        x = w.innerWidth || e.clientWidth || g.clientWidth,
+        y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+    if (!isMobile() && x > 1024) {
+        // <![CDATA[
+        var colour = "#009FDB";
+        var sparkles = 1200;
+
+        /****************************
+        *  Tinkerbell Magic Sparkle *
+        * (c) 2005 mf2fm web-design *
+        *  http://www.mf2fm.com/rv  *
+        * DON'T EDIT BELOW THIS BOX *
+        ****************************/
+        var x = ox = 400;
+        var y = oy = 300;
+        var swide = 800;
+        var shigh = 600;
+        var sleft = sdown = 0;
+        var tiny = new Array();
+        var star = new Array();
+        var starv = new Array();
+        var starx = new Array();
+        var stary = new Array();
+        var tinyx = new Array();
+        var tinyy = new Array();
+        var tinyv = new Array();
+
+        window.onload = function () {
+            if (document.getElementById) {
+                var i, rats, rlef, rdow;
+                for (var i = 0; i < sparkles; i++) {
+                    var rats = createDiv(3, 3);
+                    rats.style.visibility = "hidden";
+                    document.body.appendChild(tiny[i] = rats);
+                    starv[i] = 0;
+                    tinyv[i] = 0;
+                    var rats = createDiv(5, 5);
+                    rats.style.backgroundColor = "transparent";
+                    rats.style.visibility = "hidden";
+                    var rlef = createDiv(1, 5);
+                    var rdow = createDiv(5, 1);
+                    rats.appendChild(rlef);
+                    rats.appendChild(rdow);
+                    rlef.style.top = "2px";
+                    rlef.style.left = "0px";
+                    rdow.style.top = "0px";
+                    rdow.style.left = "2px";
+                    document.body.appendChild(star[i] = rats);
+                }
+                set_width();
+                sparkle();
+            }
+        }
+
+        function sparkle() {
+            var c;
+            if (x != ox || y != oy) {
+                ox = x;
+                oy = y;
+                for (c = 0; c < sparkles; c++) if (!starv[c]) {
+                    star[c].style.left = (starx[c] = x) + "px";
+                    star[c].style.top = (stary[c] = y) + "px";
+                    star[c].style.clip = "rect(0px, 5px, 5px, 0px)";
+                    star[c].style.visibility = "visible";
+                    starv[c] = 50;
+                    break;
+                }
+            }
+            for (c = 0; c < sparkles; c++) {
+                if (starv[c]) update_star(c);
+                if (tinyv[c]) update_tiny(c);
+            }
+            setTimeout("sparkle()", 40);
+        }
+
+        function update_star(i) {
+            if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
+            if (starv[i]) {
+                stary[i] += 1 + Math.random() * 3;
+                if (stary[i] < shigh + sdown) {
+                    star[i].style.top = stary[i] + "px";
+                    starx[i] += (i % 5 - 2) / 5;
+                    star[i].style.left = starx[i] + "px";
+                }
+                else {
+                    star[i].style.visibility = "hidden";
+                    starv[i] = 0;
+                    return;
+                }
+            }
+            else {
+                tinyv[i] = 50;
+                tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
+                tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
+                tiny[i].style.width = "2px";
+                tiny[i].style.height = "2px";
+                star[i].style.visibility = "hidden";
+                tiny[i].style.visibility = "visible"
+            }
+        }
+
+        function update_tiny(i) {
+            if (--tinyv[i] == 25) {
+                tiny[i].style.width = "1px";
+                tiny[i].style.height = "1px";
+            }
+            if (tinyv[i]) {
+                tinyy[i] += 1 + Math.random() * 3;
+                if (tinyy[i] < shigh + sdown) {
+                    tiny[i].style.top = tinyy[i] + "px";
+                    tinyx[i] += (i % 5 - 2) / 5;
+                    tiny[i].style.left = tinyx[i] + "px";
+                }
+                else {
+                    tiny[i].style.visibility = "hidden";
+                    tinyv[i] = 0;
+                    return;
+                }
+            }
+            else tiny[i].style.visibility = "hidden";
+        }
+
+        document.onmousemove = mouse;
+        function mouse(e) {
+            set_scroll();
+            y = (e) ? e.pageY : event.y + sdown;
+            x = (e) ? e.pageX : event.x + sleft;
+        }
+
+        function set_scroll() {
+            if (typeof (self.pageYOffset) == "number") {
+                sdown = self.pageYOffset;
+                sleft = self.pageXOffset;
+            }
+            else if (document.body.scrollTop || document.body.scrollLeft) {
+                sdown = document.body.scrollTop;
+                sleft = document.body.scrollLeft;
+            }
+            else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+                sleft = document.documentElement.scrollLeft;
+                sdown = document.documentElement.scrollTop;
+            }
+            else {
+                sdown = 0;
+                sleft = 0;
+            }
+        }
+
+        window.onresize = set_width;
+        function set_width() {
+            if (typeof (self.innerWidth) == "number") {
+                swide = self.innerWidth;
+                shigh = self.innerHeight;
+            }
+            else if (document.documentElement && document.documentElement.clientWidth) {
+                swide = document.documentElement.clientWidth;
+                shigh = document.documentElement.clientHeight;
+            }
+            else if (document.body.clientWidth) {
+                swide = document.body.clientWidth;
+                shigh = document.body.clientHeight;
+            }
+        }
+
+        function createDiv(height, width) {
+            var div = document.createElement("div");
+            div.style.position = "absolute";
+            div.style.height = height + "px";
+            div.style.width = width + "px";
+            div.style.overflow = "hidden";
+            div.style.backgroundColor = colour;
+            return (div);
+        }
+        // ]]>
+    }
+</script>
+
+<style type="text/css">
+    /* Circle Text Styles */
+    #outerCircleText {
+        /* Optional - DO NOT SET FONT-SIZE HERE, SET IT IN THE SCRIPT */
+        /* font-style: italic;
+        font-weight: bold;
+        font-family: 'comic sans ms', verdana, arial; */
+        color: #F0F0F0;
+        /* End Optional */
+        /* Start Required - Do Not Edit */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3000;
+        cursor: default;
+    }
+
+    #outerCircleText div {
+        position: relative;
+    }
+
+    #outerCircleText div div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    /* End Required */
+    /* End Circle Text Styles */
+</style>
+<script type="text/javascript">
+    /* Circling text trail- Tim Tilton
+       Website: http://www.tempermedia.com/
+       Visit: http://www.dynamicdrive.com/ for Original Source and tons of scripts
+       Modified Here for more flexibility and modern browser support
+       Modifications as first seen in http://www.dynamicdrive.com/forums/
+       username:jscheuer1 - This notice must remain for legal use
+       */
+    ; (function () {
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        var w = window,
+            d = document,
+            e = d.documentElement,
+            g = d.getElementsByTagName('body')[0],
+            x = w.innerWidth || e.clientWidth || g.clientWidth,
+            y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+        if (!isMobile() && x > 1024) {
+            // Your message here (QUOTED STRING)
+            var msg = "hello  world";
+            /* THE REST OF THE EDITABLE VALUES BELOW ARE ALL UNQUOTED NUMBERS */
+            // Set font's style size for calculating dimensions
+            // Set to number of desired pixels font size (decimal and negative numbers not allowed)
+            var size = 24;
+            // Set both to 1 for plain circle, set one of them to 2 for oval
+            // Other numbers & decimals can have interesting effects, keep these low (0 to 3)
+            var circleY = 1; var circleX = 2.25;
+            // The larger this divisor, the smaller the spaces between letters
+            // (decimals allowed, not negative numbers)
+            var letter_spacing = 5;
+            // The larger this multiplier, the bigger the circle/oval
+            // (decimals allowed, not negative numbers, some rounding is applied)
+            var diameter = 9.5;
+            // Rotation speed, set it negative if you want it to spin clockwise (decimals allowed)
+            var rotation = 0.3;
+            // This is not the rotation speed, its the reaction speed, keep low!
+            // Set this to 1 or a decimal less than one (decimals allowed, not negative numbers)
+            var speed = 0.1;
+            ////////////////////// Stop Editing //////////////////////
+            if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+            msg = msg.split('');
+            var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+                ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+                o = document.createElement('div'), oi = document.createElement('div'),
+                b = document.compatMode && document.compatMode != "BackCompat" ? document.documentElement : document.body,
+                mouse = function (e) {
+                    e = e || window.event;
+                    ymouse = !isNaN(e.pageY) ? e.pageY : e.clientY; // y-position
+                    xmouse = !isNaN(e.pageX) ? e.pageX : e.clientX; // x-position
+                },
+                makecircle = function () { // rotation/positioning
+                    if (init.nopy) {
+                        o.style.top = (b || document.body).scrollTop + 'px';
+                        o.style.left = (b || document.body).scrollLeft + 'px';
+                    };
+                    currStep -= rotation;
+                    for (var d, i = n; i > -1; --i) { // makes the circle
+                        d = document.getElementById('iemsg' + i).style;
+                        d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+                        d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+                    };
+                },
+                drag = function () { // makes the resistance
+                    y[0] = Y[0] += (ymouse - Y[0]) * speed;
+                    x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+                    for (var i = n; i > 0; --i) {
+                        y[i] = Y[i] += (y[i - 1] - Y[i]) * speed;
+                        x[i] = X[i] += (x[i - 1] - X[i]) * speed;
+                    };
+                    makecircle();
+                },
+                init = function () { // appends message divs, & sets initial values for positioning arrays
+                    if (!isNaN(window.pageYOffset)) {
+                        ymouse += window.pageYOffset;
+                        xmouse += window.pageXOffset;
+                    } else init.nopy = true;
+                    for (var d, i = n; i > -1; --i) {
+                        d = document.createElement('div'); d.id = 'iemsg' + i;
+                        d.style.height = d.style.width = a + 'px';
+                        d.appendChild(document.createTextNode(msg[i]));
+                        oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+                    };
+                    o.appendChild(oi); document.body.appendChild(o);
+                    setInterval(drag, 25);
+                },
+                ascroll = function () {
+                    ymouse += window.pageYOffset;
+                    xmouse += window.pageXOffset;
+                    window.removeEventListener('scroll', ascroll, false);
+                };
+            o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+            if (window.addEventListener) {
+                window.addEventListener('load', init, false);
+                document.addEventListener('mouseover', mouse, false);
+                document.addEventListener('mousemove', mouse, false);
+                if (/Apple/.test(navigator.vendor))
+                    window.addEventListener('scroll', ascroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', init);
+                document.attachEvent('onmousemove', mouse);
+            };
+        }
+    })();
+</script>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</html>
