@@ -1,0 +1,91 @@
+        body {
+            background-color: rgb(0, 0, 0);
+            background-image: url("img/andromeda.jpg");
+            background-size: cover;
+            color: #F0F0F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 1.4rem;
+            height: 100%;
+            overflow: hidden;
+            line-height: 200%;
+        }
+
+        ::-moz-selection {
+            color: black;
+            background: #188ed2;
+            border-radius: 1rem;
+        }
+
+        ::selection {
+            color: black;
+            background: #188ed2;
+            border-radius: 1rem;
+        }
+
+        #container-main {
+            padding: 4rem;
+            border-radius: 1rem;
+            box-shadow: 3px 5px rgba(0, 0, 0, 0.568);
+            background-color: #1b1b1b;
+            text-align: center;
+        }
+
+        #container-main:hover {
+            box-shadow: 3px 5px rgba(0, 0, 0, 0.5);
+            transition: .9s;
+        }
+
+        a,
+        a:visited {
+            padding: 5px;
+            background-color: rgb(15, 15, 15);
+            border-radius: .3rem;
+            text-decoration: none;
+            color: #F0F0F0;
+            transition: .7s;
+        }
+
+        a:hover {
+            padding: 5px;
+            background-color: rgb(38, 127, 187);
+            text-decoration: none;
+            transition: 0.3s;
+            color: #F0F0F0;
+            transition: .5s;
+        }
+
+        .lighter-background {
+            background-color: rgba(43, 43, 43, 0) !important;
+        }
+
+        .company-logo {
+            padding-left: 5px;
+            margin-top: 1rem;
+            height: 1.5rem;
+        }
+
+        *:not(a):not(img) {
+            cursor: url("img/milky-way_1f30c.png"), default, auto !important;
+        }
+
+        #pfp {
+            max-width: 30%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                font-size: 1.3rem;
+                background-color: black;
+
+            }
+
+            #container-main {
+                padding: 2rem;
+            }
+        }
