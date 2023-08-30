@@ -1,91 +1,139 @@
-        body {
-            background-color: rgb(0, 0, 0);
-            background-image: url("img/andromeda.jpg");
-            background-size: cover;
-            color: #F0F0F0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            font-family: "Lucida Console", "Courier New", monospace;
-            font-size: 1.4rem;
-            height: 100%;
-            overflow: hidden;
-            line-height: 200%;
-        }
+:root {
+    --nblue: #188ed2;
+    --nblack: #171717;
+    --nwhite: #ffffff;
+  }
 
-        ::-moz-selection {
-            color: black;
-            background: #188ed2;
-            border-radius: 1rem;
-        }
+body {
+    background-color: rgba(0, 0, 0, 0.399);
+    background-image: url("img/andromeda.jpg");
+    background-size: cover;
+    color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1.4rem;
+    height: 100%;
+    overflow: hidden;
+    line-height: 200%;
+    transition: .5s;
+}
 
-        ::selection {
-            color: black;
-            background: #188ed2;
-            border-radius: 1rem;
-        }
+::-moz-selection {
+    color: black;
+    background: var(--nblue);
+    border-radius: 1rem;
+}
 
-        #container-main {
-            padding: 4rem;
-            border-radius: 1rem;
-            box-shadow: 3px 5px rgba(0, 0, 0, 0.568);
-            background-color: #1b1b1b;
-            text-align: center;
-        }
+::selection {
+    color: black;
+    background: var(--nblue);
+    border-radius: 1rem;
+}
 
-        #container-main:hover {
-            box-shadow: 3px 5px rgba(0, 0, 0, 0.5);
-            transition: .9s;
-        }
+#container-main {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .2rem rgba(0, 0, 0, 0.568);
+    width: 30%;
+    background-color: #1b1b1b;
+    text-align: center;
+}
 
-        a,
-        a:visited {
-            padding: 5px;
-            background-color: rgb(15, 15, 15);
-            border-radius: .3rem;
-            text-decoration: none;
-            color: #F0F0F0;
-            transition: .7s;
-        }
+h2{
+    font-size: 2.1rem;
+    letter-spacing: .2rem;
+    margin: 0rem;
+    padding: .1rem;
+}
 
-        a:hover {
-            padding: 5px;
-            background-color: rgb(38, 127, 187);
-            text-decoration: none;
-            transition: 0.3s;
-            color: #F0F0F0;
-            transition: .5s;
-        }
+a,
+a:visited {
+    padding: 5.5px;
+    background-color: var(--nwhite);
+    border-radius: .3rem;
+    text-decoration: none;
+    color: var(--nblack);
+    transition: .7s;
+}
 
-        .lighter-background {
-            background-color: rgba(43, 43, 43, 0) !important;
-        }
+a:hover {
+    padding: 6px;
+    background-color: var(--nblue);
+    text-decoration: none;
+    transition: 0.3s;
+    color: #F0F0F0;
+    transition: .5s;
+}
 
-        .company-logo {
-            padding-left: 5px;
-            margin-top: 1rem;
-            height: 1.5rem;
-        }
+.no-background {
+    color: var(--nwhite) !important;
+    background: none !important;
+}
 
-        *:not(a):not(img) {
-            cursor: url("img/milky-way_1f30c.png"), default, auto !important;
-        }
+.no-background:hover {
+    color: var(--nblue) !important;
+    background: none !important;
+}
 
-        #pfp {
-            max-width: 30%;
-            height: auto;
-            border-radius: 50%;
-        }
+.company-logo {
+    padding-left: 5px;
+    margin-top: 1rem;
+    height: 1.5rem;
+}
 
-        @media (max-width: 1024px) {
-            body {
-                font-size: 1.3rem;
-                background-color: black;
+*:not(a):not(img):hover {
+    cursor: url("img/milky-way_1f30c.png"), default, auto !important;
+}
 
-            }
+.pfp {
+    margin: 0rem 0rem 2rem;
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    border: var(--nwhite) 4px solid;
+}
 
-            #container-main {
-                padding: 2rem;
-            }
-        }
+.pfp:hover {
+    border: var(--nblue) 4px solid;
+    filter:hue-rotate(360deg);
+    transition: 1s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+#outerCircleText {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'comic sans ms', verdana, arial;
+    color: var(--nwhite);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    cursor: default;
+}
+
+#outerCircleText div {
+    position: relative;
+}
+
+#outerCircleText div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.3rem;
+        background-color: black;
+
+    }
+
+    #container-main {
+        padding: 1rem;
+        width: fit-content;
+    }
+}
