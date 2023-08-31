@@ -36,10 +36,17 @@ body {
 #container-main {
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: .1rem .2rem rgba(0, 0, 0, 0.568);
+    box-shadow: .0rem .25rem 25rem 1rem rgba(246, 246, 246, 0.358);
     width: 30%;
-    background-color: #1b1b1b;
+    background-color: hsla(0, 0%, 9%, 0.934);
     text-align: center;
+    transition: .5s;
+
+}
+
+#container-main:hover {
+    box-shadow: .0rem .25rem 25rem 1rem rgba(246, 246, 246, 0.458);
+    transition: 1s;
 }
 
 h2{
